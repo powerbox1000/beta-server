@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DevTime Scripting Homepage</title>
+</head>
+<body>
+<table id="projects">
+<tbody>
+<tr>
+<td>
+<img src="./images/freefonts.png" id="freefontBtn">
+</td>
+</tr>
+</tbody>
+</table>
+<script>
+  document.getElementById("freefontBtn").addEventListener("mouseover",function(){
+    document.getElementById("freefontBtn").setAttribute("src","./images/freefontsLarge.png");
+  });
+  document.getElementById("freefontBtn").addEventListener("mouseleave",function(){
+    document.getElementById("freefontBtn").setAttribute("src","./images/freefonts.png");
+  });
+  document.getElementById("freefontBtn").addEventListener("click",function(){
+    var el = document.createElement("a");
+    el.setAttribute("href","./free-fonts");
+    el.click();
+  });
+</script>
+</body>
+</html>
